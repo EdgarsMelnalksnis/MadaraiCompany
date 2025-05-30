@@ -1,381 +1,102 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
-  <title>
-   Residence Permit Form
-  </title>
+<head>
+  <meta charset="UTF-8">
+  <title>Company Formation Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <style>
-   body { font-family: Arial, sans-serif; padding: 20px; background: #eef2f5; margin: 0; }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #eef2f5; margin: 0; }
     .section { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 6px; box-shadow: 0 0 6px rgba(0,0,0,0.1); }
-    input[type=text], input[type=date] { font-size: 16px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 10px; overflow-x: auto; display: block; }
-    table th, table td { border: 1px solid #ccc; padding: 6px; }
-    .add-row-btn { background: #4CAF50; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 4px; margin-top: 10px; }
-    .add-row-btn:hover { background: #45a049; }
-    button[type=submit] { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px; }
-    button[type=submit]:hover { background: #0056b3; }
+    input[type="text"], input[type="date"] { font-size: 16px; width: 100%; padding: 6px; margin-top: 4px; }
+    label { font-weight: bold; display: block; margin-bottom: 4px; }
+    .checkbox-group { margin-left: 15px; margin-top: 8px; }
   </style>
-  <script>
-   function addRow(question, maxRows) {
-      const table = document.getElementById('table_' + question);
-      const headers = table.rows[0].cells.length;
-      const rows = table.rows.length - 1;
-      if (rows >= maxRows) return;
-      const newRow = table.insertRow();
-      for (let i = 0; i < headers; i++) {
-        const colName = table.rows[0].cells[i].textContent;
-        const newCell = newRow.insertCell();
-        const input = document.createElement("input");
-        input.type = colName.toLowerCase().includes("date") ? "date" : "text";
-        input.name = question + "_" + colName + "_" + rows;
-        input.style.width = "100%";
-        newCell.appendChild(input);
-      }
-      document.getElementById(question + "_rows").value = rows + 1;
-    }
-  </script>
- </head>
- <body>
-  <h1>
-   Residence Permit Application
-  </h1>
+</head>
+<body>
+  <h1>Company Formation Form</h1>
   <form method="POST" onkeydown="return event.key !== 'Enter';">
-   <div class="section">
-    <label>
-     <strong>
-      Client name:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="1" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Phone:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="2" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      e-mail:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="3" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Contact mailing address:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="4" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Company name:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="5" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Amount of registered capital (minimum share capital is 2800 EUR):
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="6" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Trades (Activities you will actually carry out):
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="7" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Shareholder/director name:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="8" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Shareholder/director
-     </strong>
-    </label>
-    <br/>
-    <input name="Check Box 1" type="checkbox"/>
-    Shareholder
-    <br/>
-    <input name="Check Box 2" type="checkbox"/>
-    Director
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Shareholder/director name:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="9" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Shareholder/director
-     </strong>
-    </label>
-    <br/>
-    <input name="Check Box 3" type="checkbox"/>
-    Shareholder
-    <br/>
-    <input name="Check Box 4" type="checkbox"/>
-    Director
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Shareholder/director name:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="10" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Shareholder/director
-     </strong>
-    </label>
-    <br/>
-    <input name="Check Box 5" type="checkbox"/>
-    Shareholder
-    <br/>
-    <input name="Check Box 6" type="checkbox"/>
-    Director
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Permanent address:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="11" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Permanent address(city):
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="12" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Permanent address (country):
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="13" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Place of birth: district
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="13" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      ID/Passport No.:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="14" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Place of birth:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="17" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Share
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="20" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Method of action:
-     </strong>
-    </label>
-    <br/>
-    <input name="Check Box 7" type="checkbox"/>
-    Independently
-    <br/>
-    <input name="Check Box 8" type="checkbox"/>
-    Together
-    <br/>
-    <input name="Check Box 9" type="checkbox"/>
-    Other
-    <br/>
-    <input class="form-control" name="29" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Method of action:
-     </strong>
-    </label>
-    <br/>
-    <input name="Check Box 10" type="checkbox"/>
-    Independently
-    <br/>
-    <input name="Check Box 11" type="checkbox"/>
-    Together
-    <br/>
-    <input name="Check Box 12" type="checkbox"/>
-    Other
-    <br/>
-    <input class="form-control" name="30" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Method of action:
-     </strong>
-    </label>
-    <br/>
-    <input name="Check Box 13" type="checkbox"/>
-    Independently
-    <br/>
-    <input name="Check Box 14" type="checkbox"/>
-    Together
-    <br/>
-    <input name="Check Box 15" type="checkbox"/>
-    Other
-    <br/>
-    <input class="form-control" name="31" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Information about own registered office, Owner:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="23" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Unit Number:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="24" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Address
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="25" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      City
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="26" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Zip:
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="27" type="text"/>
-    <br/>
-   </div>
-   <div class="section">
-    <label>
-     <strong>
-      Country
-     </strong>
-    </label>
-    <br/>
-    <input class="form-control" name="28" type="text"/>
-    <br/>
-   </div>
-   <div class="form-footer text-center mt-4">
-    <button class="btn btn-primary" type="submit">
-     Generate PDF
-    </button>
-   </div>
+  
+    <div class="section"><label>Client name:</label><input type="text" name="Client name:"></div>
+    <div class="section"><label>Phone:</label><input type="text" name="Phone:"></div>
+    <div class="section"><label>e-mail:</label><input type="text" name="e-mail:"></div>
+    <div class="section"><label>Contact mailing address:</label><input type="text" name="Contact mailing address:"></div>
+    <div class="section"><label>Company name:</label><input type="text" name="Company name:"></div>
+    <div class="section"><label>Amount of registered capital (minimum share capital is 2800 EUR):</label><input type="text" name="Amount of registered capital (minimum share capital is 2800 EUR):"></div>
+    <div class="section"><label>Trades (Activities you will actually carry out):</label><input type="text" name="Trades (Activities you will actually carry out):"></div>
+
+    <!-- Shareholders -->
+    <div class="section"><label>Shareholder/director name:</label><input type="text" name="Shareholder/director name:"></div>
+    <div class="section">
+      <label>Shareholder/director:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="Shareholder/director_Shareholder"> Shareholder<br>
+        <input type="checkbox" name="Shareholder/director_Director"> Director
+      </div>
+    </div>
+
+    <div class="section"><label>Shareholder/director name:</label><input type="text" name="Shareholder/director name:"></div>
+    <div class="section">
+      <label>Shareholder/director:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="Shareholder/director2_Shareholder"> Shareholder<br>
+        <input type="checkbox" name="Shareholder/director2_Director"> Director
+      </div>
+    </div>
+
+    <div class="section"><label>Shareholder/director name:</label><input type="text" name="Shareholder/director name:"></div>
+    <div class="section">
+      <label>Shareholder/director:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="Shareholder/director3_Shareholder"> Shareholder<br>
+        <input type="checkbox" name="Shareholder/director3_Director"> Director
+      </div>
+    </div>
+
+    <!-- Address and ID -->
+    <div class="section"><label>Permanent address:</label><input type="text" name="Permanent address:"></div>
+    <div class="section"><label>Permanent address(city):</label><input type="text" name="Permanent address(city):"></div>
+    <div class="section"><label>Permanent address (country):</label><input type="text" name="Permanent address (country):"></div>
+    <div class="section"><label>Place of birth: district</label><input type="text" name="Place of birth: district"></div>
+    <div class="section"><label>ID/Passport No.:</label><input type="text" name="ID/Passport No.:"></div>
+    <div class="section"><label>Place of birth:</label><input type="text" name="Place of birth:"></div>
+    <div class="section"><label>Share:</label><input type="text" name="Share"></div>
+
+    <!-- Hybrid (Method of action) -->
+    <div class="section"><label>Method of action:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="Method of action_1_Independently"> Independently<br>
+        <input type="checkbox" name="Method of action_1_Together"> Together<br>
+        <input type="checkbox" name="Method of action_1_Other"> Other<br>
+        <input type="text" name="Method of action_1_Other_text" placeholder="Other...">
+      </div>
+    </div>
+    <div class="section"><label>Method of action:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="Method of action_2_Independently"> Independently<br>
+        <input type="checkbox" name="Method of action_2_Together"> Together<br>
+        <input type="checkbox" name="Method of action_2_Other"> Other<br>
+        <input type="text" name="Method of action_2_Other_text" placeholder="Other...">
+      </div>
+    </div>
+    <div class="section"><label>Method of action:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="Method of action_3_Independently"> Independently<br>
+        <input type="checkbox" name="Method of action_3_Together"> Together<br>
+        <input type="checkbox" name="Method of action_3_Other"> Other<br>
+        <input type="text" name="Method of action_3_Other_text" placeholder="Other...">
+      </div>
+    </div>
+
+    <!-- Registered office -->
+    <div class="section"><label>Information about own registered office, Owner:</label><input type="text" name="Information about own registered office, Owner:"></div>
+    <div class="section"><label>Unit Number:</label><input type="text" name="Unit Number:"></div>
+    <div class="section"><label>Address:</label><input type="text" name="Address"></div>
+    <div class="section"><label>City:</label><input type="text" name="City"></div>
+    <div class="section"><label>Zip:</label><input type="text" name="Zip:"></div>
+    <div class="section"><label>Country:</label><input type="text" name="Country"></div>
+
+    <button type="submit">Submit</button>
   </form>
- </body>
+</body>
 </html>
+

@@ -3,44 +3,43 @@
     {
       "question": "Client name:",
       "type": "text",
-      "field_name": "1"
+      "field_name": "Text1"
     },
-
     {
       "question": "Phone:",
       "type": "text",
-      "field_name": "2"
+      "field_name": "Text2"
     },
     {
       "question": "e-mail:",
       "type": "text",
-      "field_name": "3"
+      "field_name": "Text3"
     },
     {
       "question": "Contact mailing address:",
       "type": "text",
-      "field_name": "4"
+      "field_name": "Text4"
     },
     {
       "question": "Company name:",
       "type": "text",
-      "field_name": "5"
+      "field_name": "Text5"
     },
     {
       "question": "Amount of registered capital (minimum share capital is 2800 EUR):",
       "type": "text",
-      "field_name": "6"
+      "field_name": "Text6"
     },
     {
       "question": "Trades (Activities you will actually carry out):",
       "type": "text",
-      "field_name": "7",
+      "field_name": "Text7",
       "calendar": true
     },
     {
       "question": "Shareholder/director name:",
       "type": "text",
-      "field_name": "8",
+      "field_name": "Text8",
       "calendar": true
     },
     {
@@ -60,7 +59,7 @@
     {
       "question": "Shareholder/director name:",
       "type": "text",
-      "field_name": "9",
+      "field_name": "Text9",
       "calendar": true
     },
     {
@@ -80,7 +79,7 @@
     {
       "question": "Shareholder/director name:",
       "type": "text",
-      "field_name": "10",
+      "field_name": "Text10",
       "calendar": true
     },
     {
@@ -100,37 +99,37 @@
     {
       "question": "Permanent address:",
       "type": "text",
-      "field_name": "11"
+      "field_name": "Text11"
     },
     {
       "question": "Permanent address(city):",
       "type": "text",
-      "field_name": "12"
+      "field_name": "Text12"
     },
     {
       "question": "Permanent address (country):",
       "type": "text",
-      "field_name": "13"
+      "field_name": "Text13"
     },
     {
       "question": "Place of birth: district",
       "type": "text",
-      "field_name": "13"
+      "field_name": "Text14"
     },
     {
       "question": "ID/Passport No.:",
       "type": "text",
-      "field_name": "14"
+      "field_name": "Text15"
     },
     {
       "question": "Place of birth:",
       "type": "text",
-      "field_name": "17"
+      "field_name": "Text16"
     },
     {
       "question": "Share",
       "type": "text",
-      "field_name": "20"
+      "field_name": "Text17"
     },
     {
       "question": "Method of action:",
@@ -213,33 +212,33 @@
     {
       "question": "Information about own registered office, Owner:",
       "type": "text",
-      "field_name": "23",
+      "field_name": "Text18",
       "calendar": true
     },
     {
       "question": "Unit Number:",
       "type": "text",
-      "field_name": "24"
+      "field_name": "Text19"
     },
     {
       "question": "Address",
       "type": "text",
-      "field_name": "25"
+      "field_name": "Text20"
     },
     {
       "question": "City",
       "type": "text",
-      "field_name": "26"
+      "field_name": "Text21"
     },
     {
       "question": "Zip:",
       "type": "text",
-      "field_name": "27"
+      "field_name": "Text22"
     },
     {
       "question": "Country",
       "type": "text",
-      "field_name": "28"
+      "field_name": "Text29"
     }
   ]
 }
