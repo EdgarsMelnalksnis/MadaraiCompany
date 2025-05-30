@@ -1,0 +1,245 @@
+{
+  "form_sections": [
+    {
+      "question": "Client name:",
+      "type": "text",
+      "field_name": "1"
+    },
+
+    {
+      "question": "Phone:",
+      "type": "text",
+      "field_name": "2"
+    },
+    {
+      "question": "e-mail:",
+      "type": "text",
+      "field_name": "3"
+    },
+    {
+      "question": "Contact mailing address:",
+      "type": "text",
+      "field_name": "4"
+    },
+    {
+      "question": "Company name:",
+      "type": "text",
+      "field_name": "5"
+    },
+    {
+      "question": "Amount of registered capital (minimum share capital is 2800 EUR):",
+      "type": "text",
+      "field_name": "6"
+    },
+    {
+      "question": "Trades (Activities you will actually carry out):",
+      "type": "text",
+      "field_name": "7",
+      "calendar": true
+    },
+    {
+      "question": "Shareholder/director name:",
+      "type": "text",
+      "field_name": "8",
+      "calendar": true
+    },
+    {
+      "question": "Shareholder/director",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Shareholder",
+          "field_id": "Check Box 1"
+        },
+        {
+          "label": "Director",
+          "field_id": "Check Box 2"
+        }
+      ]
+    },
+    {
+      "question": "Shareholder/director name:",
+      "type": "text",
+      "field_name": "9",
+      "calendar": true
+    },
+    {
+      "question": "Shareholder/director",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Shareholder",
+          "field_id": "Check Box 3"
+        },
+        {
+          "label": "Director",
+          "field_id": "Check Box 4"
+        }
+      ]
+    },
+    {
+      "question": "Shareholder/director name:",
+      "type": "text",
+      "field_name": "10",
+      "calendar": true
+    },
+    {
+      "question": "Shareholder/director",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Shareholder",
+          "field_id": "Check Box 5"
+        },
+        {
+          "label": "Director",
+          "field_id": "Check Box 6"
+        }
+      ]
+    },
+    {
+      "question": "Permanent address:",
+      "type": "text",
+      "field_name": "11"
+    },
+    {
+      "question": "Permanent address(city):",
+      "type": "text",
+      "field_name": "12"
+    },
+    {
+      "question": "Permanent address (country):",
+      "type": "text",
+      "field_name": "13"
+    },
+    {
+      "question": "Place of birth: district",
+      "type": "text",
+      "field_name": "13"
+    },
+    {
+      "question": "ID/Passport No.:",
+      "type": "text",
+      "field_name": "14"
+    },
+    {
+      "question": "Place of birth:",
+      "type": "text",
+      "field_name": "17"
+    },
+    {
+      "question": "Share",
+      "type": "text",
+      "field_name": "20"
+    },
+    {
+      "question": "Method of action:",
+      "type": "hybrid",
+      "options": [
+        {
+          "label": "Independently",
+          "type": "checkbox",
+          "field_id": "Check Box 7"
+        },
+        {
+          "label": "Together",
+          "type": "checkbox",
+          "field_id": "Check Box 8"
+        },
+        {
+          "label": "Other",
+          "type": "checkbox",
+          "field_id": "Check Box 9"
+        },
+        {
+          "label": "Other",
+          "type": "text",
+          "field_id": "29"
+        }
+      ]
+    },
+    {
+      "question": "Method of action:",
+      "type": "hybrid",
+      "options": [
+        {
+          "label": "Independently",
+          "type": "checkbox",
+          "field_id": "Check Box 10"
+        },
+        {
+          "label": "Together",
+          "type": "checkbox",
+          "field_id": "Check Box 11"
+        },
+        {
+          "label": "Other",
+          "type": "checkbox",
+          "field_id": "Check Box 12"
+        },
+        {
+          "label": "Other",
+          "type": "text",
+          "field_id": "30"
+        }
+      ]
+    },
+    {
+      "question": "Method of action:",
+      "type": "hybrid",
+      "options": [
+        {
+          "label": "Independently",
+          "type": "checkbox",
+          "field_id": "Check Box 13"
+        },
+        {
+          "label": "Together",
+          "type": "checkbox",
+          "field_id": "Check Box 14"
+        },
+        {
+          "label": "Other",
+          "type": "checkbox",
+          "field_id": "Check Box 15"
+        },
+        {
+          "label": "Other",
+          "type": "text",
+          "field_id": "31"
+        }
+      ]
+    },
+    {
+      "question": "Information about own registered office, Owner:",
+      "type": "text",
+      "field_name": "23",
+      "calendar": true
+    },
+    {
+      "question": "Unit Number:",
+      "type": "text",
+      "field_name": "24"
+    },
+    {
+      "question": "Address",
+      "type": "text",
+      "field_name": "25"
+    },
+    {
+      "question": "City",
+      "type": "text",
+      "field_name": "26"
+    },
+    {
+      "question": "Zip:",
+      "type": "text",
+      "field_name": "27"
+    },
+    {
+      "question": "Country",
+      "type": "text",
+      "field_name": "28"
+    }
+  ]
+}
